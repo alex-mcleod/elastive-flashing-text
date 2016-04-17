@@ -6,7 +6,7 @@ import { applyElastiveMixin, BasicPreview, Types } from 'elastive-component';
 @applyElastiveMixin({
   editableProps: ['text', 'style'],
   preview(props) {
-    return <BasicPreview onClick={props.onClick} name="Text" />;
+    return <BasicPreview onClick={props.onClick} name="Flashing Text" />;
   }
 })
 export default class FlashingText extends React.Component {
