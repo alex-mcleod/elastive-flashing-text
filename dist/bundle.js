@@ -112,7 +112,7 @@
 	exports.default = FlashingText;
 
 
-	console.log("EXECUTED!", window);
+	(0, _elastiveComponent.exportComponent)(FlashingText);
 
 /***/ },
 /* 2 */
@@ -3717,6 +3717,15 @@
 	  enumerable: true,
 	  get: function get() {
 	    return _types.Types;
+	  }
+	});
+
+	var _export = __webpack_require__(105);
+
+	Object.defineProperty(exports, 'exportComponent', {
+	  enumerable: true,
+	  get: function get() {
+	    return _export.exportComponent;
 	  }
 	});
 
@@ -24250,6 +24259,20 @@
 	  string: makePrimitiveType('string'),
 	  style: makePrimitiveType('object', 'style')
 	};
+
+/***/ },
+/* 105 */
+/***/ function(module, exports) {
+
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.exportComponent = exportComponent;
+	function exportComponent(component) {
+	  window.___latestElastiveComponent = component;
+	}
 
 /***/ }
 /******/ ]);

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { applyElastiveMixin, BasicPreview, Types } from 'elastive-component';
+import { applyElastiveMixin, BasicPreview, Types, exportComponent } from 'elastive-component';
 
 
 @applyElastiveMixin({
@@ -30,4 +30,5 @@ export default class FlashingText extends React.Component {
   }
 }
 
-console.log("EXECUTED!", window);
+
+exportComponent(FlashingText);
