@@ -29,3 +29,5 @@ export default class FlashingText extends React.Component {
     );
   }
 }
+
+console.log("EXECUTED!", window);
