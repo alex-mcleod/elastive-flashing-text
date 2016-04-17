@@ -24271,7 +24271,7 @@
 	});
 	exports.exportComponent = exportComponent;
 	function exportComponent(component) {
-	  window.___latestElastiveComponent = component;
+	  window.__latestElastiveComponent__ = component;
 	}
 
 /***/ }
