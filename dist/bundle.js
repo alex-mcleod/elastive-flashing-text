@@ -96,7 +96,8 @@
 	      return _react2.default.createElement(
 	        'p',
 	        { style: this.props.style, onClick: this.startEditing },
-	        this.props.text
+	        this.props.text,
+	        ' SHOULD FLASH'
 	      );
 	    }
 	  }]);

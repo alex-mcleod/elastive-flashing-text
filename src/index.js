@@ -24,7 +24,7 @@ export default class FlashingText extends React.Component {
   render() {
     return (
       <p style={this.props.style} onClick={ this.startEditing }>
-        {this.props.text}
+        {this.props.text} SHOULD FLASH
       </p>
     );
   }
