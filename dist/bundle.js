@@ -78,9 +78,7 @@
 
 	var FlashingText = (_dec = (0, _elastiveComponent.applyElastiveMixin)({
 	  editableProps: ['text', 'style'],
-	  preview: function preview(props) {
-	    return _react2.default.createElement(_elastiveComponent.BasicPreview, { onClick: props.onClick, name: 'Flashing Text' });
-	  }
+	  name: 'Flashing Text'
 	}), _dec(_class = (_temp = _class2 = function (_React$Component) {
 	  _inherits(FlashingText, _React$Component);
 
