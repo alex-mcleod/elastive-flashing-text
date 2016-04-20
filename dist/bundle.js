@@ -3758,22 +3758,11 @@
 
 	var BaseElastiveMixin = {
 
-	  propTypes: {
-	    startEditing: _react2.default.PropTypes.func.isRequired
-	  },
-
 	  elastiveMeta: {
 	    editor: _componentEditor.StandardComponentEditor,
 	    preview: null
-	  },
-
-	  componentWillMount: function componentWillMount() {
-	    this.startEditing = this.startEditing.bind(this);
-	  },
-	  startEditing: function startEditing(evt) {
-	    evt.stopPropagation();
-	    this.props.startEditing(this);
 	  }
+
 	};
 
 	function elastiveMixinFactory(meta) {
