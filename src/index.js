@@ -1,5 +1,7 @@
 import React from 'react';
 
+import _ from 'lodash';
+
 import { Types, exportLibrary } from 'elastive-component';
 
 
@@ -15,10 +17,26 @@ export default class FlashingText extends React.Component {
     style: {}
   }
 
+  constructor() {
+    super();
+    this.state = {
+      on: true
+    };
+  }
+
+  componentDidMount() {
+    _.delay(this.doToggle, 1000);
+  }
+
+  doToggle = () => {
+    this.setState({ on: !this.state.on });
+    _.delay(this.doToggle, 1000);
+  }
+
   render() {
     return (
       <p style={this.props.style} onClick={ this.startEditing }>
-        {this.props.text} SHOULD FLASH
+        {this.state.on && this.props.text}
       </p>
     );
   }
