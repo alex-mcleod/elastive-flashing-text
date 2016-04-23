@@ -1,12 +1,8 @@
 import React from 'react';
 
-import { applyElastiveMixin, BasicPreview, Types, exportComponent } from 'elastive-component';
+import { Types, exportLibrary } from 'elastive-component';
 
 
-@applyElastiveMixin({
-  editableProps: ['text', 'style'],
-  name: 'Flashing Text'
-})
 export default class FlashingText extends React.Component {
 
   static propTypes = {
@@ -29,4 +25,12 @@ export default class FlashingText extends React.Component {
 }
 
 
-exportComponent(FlashingText);
+exportLibrary({
+  name: 'Flashing Fun',
+  components: {
+    'Flashing Text': {
+      component: FlashingText,
+      editableProps: ['text', 'style']
+    }
+  }
+});
